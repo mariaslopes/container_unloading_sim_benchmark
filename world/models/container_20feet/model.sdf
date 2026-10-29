@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name="container_20feet">
+    <static>true</static>   
+    <link name="container_origin">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://container_20feet/meshes/container.stl</uri>
+            <scale> 0.00109 0.00109 0.00109 </scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://container_20feet/meshes/container.stl</uri>
+            <scale> 0.00109 0.00109 0.00109 </scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.522 0.329 0.318 1.0</ambient>
+          <diffuse>0.522 0.329 0.318 1.0</diffuse>
+          <specular>0.2 0.2 0.2 1.0</specular>
+          <emissive>0.0 0.0 0.0 1.0</emissive>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="d435">
+    <gazebo reference="d435_link">
+      <sensor type="depth_camera" name="d435_depth_camera">
+        <always_on>true</always_on>
+        <visualize>false</visualize>
+
+        <topic>d435/depth/image_raw</topic>
+        <gz_frame_id>d435_depth_frame</gz_frame_id>
+        <update_rate>30</update_rate>
+
+        <camera>
+          <optical_frame_id>d435_depth_frame</optical_frame_id>
+          <horizontal_fov>${87.0/180.0*pi}</horizontal_fov>
+
+          <image>
+            <width>848</width>
+            <height>480</height>
+            <format>R_FLOAT32</format>
+          </image>
+
+          <clip>
+            <near>0.28</near>
+            <far>8.0</far>
+          </clip>
+
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.005</stddev>
+          </noise>
+
+          <triggered>true</triggered>
+          <trigger_topic>d435/trigger</trigger_topic>
+        </camera>
+      </sensor>
+
+      <sensor name="d435_infra1" type="camera">
+        <always_on>true</always_on>
+        <update_rate>30</update_rate>
+        <visualize>false</visualize>
+        <pose>0 0 0 0 0 0</pose>
+        <topic>d435/infra1/image_rect_raw</topic>
+        <gz_frame_id>d435_infra1_optical_frame</gz_frame_id>
+        <camera>
+          <optical_frame_id>d435_infra1_optical_frame</optical_frame_id>
+          <horizontal_fov>${87.0/180.0*pi}</horizontal_fov>
+          <image>
+            <width>848</width>
+            <height>480</height>
+            <format>L8</format>
+          </image>
+          <clip><near>0.1</near><far>10.0</far></clip>
+          <triggered>true</triggered>
+          <trigger_topic>d435/trigger</trigger_topic>
+        </camera>
+      </sensor>
+
+      <sensor name="d435_infra2" type="camera">
+        <always_on>true</always_on>
+        <update_rate>30</update_rate>
+        <visualize>false</visualize>
+        <pose>0 -0.050 0 0 0 0</pose>
+        <topic>d435/infra2/image_rect_raw</topic>
+        <gz_frame_id>d435_infra2_optical_frame</gz_frame_id>
+        <camera>
+          <optical_frame_id>d435_infra2_optical_frame</optical_frame_id>
+          <horizontal_fov>${87.0/180.0*pi}</horizontal_fov>
+          <image>
+            <width>848</width>
+            <height>480</height>
+            <format>L8</format>
+          </image>
+          <clip><near>0.1</near><far>10.0</far></clip>
+          <triggered>true</triggered>
+          <trigger_topic>d435/trigger</trigger_topic>
+        </camera>
+      </sensor>
+    </gazebo>
+</robot>

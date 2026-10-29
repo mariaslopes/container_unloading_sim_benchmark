@@ -1,0 +1,32 @@
+services:
+  container_unloading:
+    image: docker-registry.inesctec.pt/industrial_robotics/projects/produtech_r3/container_unloading_sim_benchmark:latest
+    container_name: container_unloading
+    restart: unless-stopped
+    pull_policy: always
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
+
+    network_mode: "host"
+    ipc: "host"
+    privileged: true
+
+    tty: true
+    stdin_open: true
+    command: ros2 launch container_unloading_sim_benchmark sim_bringup.launch.py
+
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+      - GZ_IP=127.0.0.1
+
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ~/.Xauthority:/root/.Xauthority:ro

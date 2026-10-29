@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+
+    <xacro:include filename="$(find epick_description)/urdf/epick_body.xacro"/>
+
+    <xacro:property name="suction_cup_parent" default="epick_body"/>
+    <xacro:property name="suction_cup_parent_length" default="0.1"/>
+    <xacro:property name="suction_cup_radius" default="0.012"/>
+    <xacro:property name="suction_cup_height" default="0.015"/>
+    <xacro:property name="body_color" default="0.0 0.0 1.0 1.0"/>
+    <xacro:property name="tcp_stroke_compensation" default="0.0"/>
+
+    <xacro:macro name="epick_macro" params="parent prefix translation_xyz orientation_rpy">
+        <xacro:epick_body parent="${parent}"/>
+
+        <xacro:property name="suction_cup_parent" value="${body_link}"/>
+        <xacro:property name="suction_cup_parent_length" value="${body_length}"/>
+
+        <xacro:cylinder_link name="${prefix}epick_suction_cup"
+                         radius="${suction_cup_radius}"
+                         length="${suction_cup_height}"
+                         color="${body_color}"
+                         parent="${suction_cup_parent}"
+                         origin_xyz="0 0 ${(suction_cup_parent_length + suction_cup_height) / 2}"/>
+
+        <link name="${prefix}epick_tcp"/>
+        <xacro:joint parent="${prefix}epick_suction_cup"
+                    child="${prefix}epick_tcp"
+                    xyz="0 0 ${suction_cup_height / 2}"/>
+
+    </xacro:macro>
+
+</robot>

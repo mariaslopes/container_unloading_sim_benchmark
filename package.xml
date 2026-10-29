@@ -1,0 +1,20 @@
+<package format="3">
+    <name>container_unloading_sim_benchmark</name>
+    <version>0.0.0</version>
+    <description>The container_unloading_sim_benchmark package</description>
+    <maintainer email="mariaslopes@todo.todo">mariaslopes</maintainer>
+    <license>MIT</license>
+    <buildtool_depend>ament_cmake</buildtool_depend>
+
+    <exec_depend>realsense2_description</exec_depend>
+    <exec_depend>depth_image_proc</exec_depend>
+    <exec_depend>trac_ik_kinematics_plugin</exec_depend>
+    <depend>rclcpp</depend>
+    <depend>std_msgs</depend>
+    <depend>gz_sim_vendor</depend>
+    <depend>gz_plugin_vendor</depend>
+
+    <export>
+        <build_type>ament_cmake</build_type>
+    </export>
+</package>

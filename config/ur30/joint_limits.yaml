@@ -1,0 +1,73 @@
+# Joints limits
+#
+# Sources:
+#
+#  - Universal Robots e-Series, User Manual, UR20, Version 5.14
+#    https://s3-eu-west-1.amazonaws.com/ur-support-site/203281/706-276-00_UR20_User_Manual_en_Global.pdf
+joint_limits:
+  shoulder_pan_joint:
+    # acceleration limits are not publicly available
+    has_acceleration_limits: true
+    max_acceleration: 20.0
+    has_effort_limits: true
+    has_position_limits: true
+    has_velocity_limits: true
+    max_effort: 738.0
+    max_velocity: 2.0944
+    min_position: -5.0 # -286°
+    max_position: 2.0  # 115°
+  shoulder_lift_joint:
+    # acceleration limits are not publicly available
+    has_acceleration_limits: true
+    max_acceleration: 20.0
+    has_effort_limits: true
+    has_position_limits: true
+    has_velocity_limits: true
+    max_effort: 738.0
+    max_velocity: 6.28
+    min_position:  -3.6 # -206°
+    max_position:  0.0  # 0°
+  elbow_joint:
+    # acceleration limits are not publicly available
+    has_acceleration_limits: true
+    max_acceleration: 20.0
+    has_effort_limits: true
+    has_position_limits: true
+    has_velocity_limits: true
+    max_effort: 433.0
+    max_velocity: 6.28
+    min_position:  -2.8 # -160°
+    max_position:  0.1  # 6°
+  wrist_1_joint:
+    # acceleration limits are not publicly available
+    has_acceleration_limits: true
+    max_acceleration: 20.0
+    has_effort_limits: true
+    has_position_limits: true
+    has_velocity_limits: true
+    max_effort: 107.0
+    max_velocity: 6.28
+    min_position:  -4.5 # -258°
+    max_position:  6.3  # 361°
+  wrist_2_joint:
+    # acceleration limits are not publicly available
+    has_acceleration_limits: true
+    max_acceleration: 20.0
+    has_effort_limits: true
+    has_position_limits: true
+    has_velocity_limits: true
+    max_effort: 107.0
+    max_velocity: 6.28
+    min_position:  -4.20 # -241°
+    max_position:  2.93  # 168°
+  wrist_3_joint:
+    # acceleration limits are not publicly available
+    has_acceleration_limits: true
+    max_acceleration: 20.0
+    has_effort_limits: true
+    has_position_limits: true
+    has_velocity_limits: true
+    max_effort: 107.0
+    max_velocity: 6.28
+    min_position: -4.5 # -258°
+    max_position: 6.0  # 344°

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+
+<robot name="emrox_ur30_d435_epick" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:arg name="initial_positions" default=""/>
+    <xacro:arg name="gazebo" default="false"/>
+
+    <!-- COMPONENT INCLUDES -->
+    <xacro:include filename="$(find container_unloading_sim_benchmark)/urdf/base/emrox.urdf.xacro"/>
+    <xacro:include filename="$(find container_unloading_sim_benchmark)/urdf/ur30/ur30_macro.xacro"/>
+    <xacro:include filename="$(find realsense2_description)/urdf/_d435.urdf.xacro"/>
+    <xacro:include filename="$(find container_unloading_sim_benchmark)/urdf/gripper/epick_1cup_macro.xacro"/>
+
+    <!-- Base -->
+    <xacro:rox_macro/>
+
+    <xacro:property name="pedestal_height" value="0.08"/>
+    <xacro:cylinder_link name="arm_pedestal"
+                         radius="0.125"
+                         length="${pedestal_height}"
+                         parent="cabinet_link"
+                         color="0.75 0.75 0.75 1"
+                         origin_xyz="0.174 0.0 ${0.376 + pedestal_height/2}"/>
+
+    <!-- Universal robot manipulator macro -->
+    <xacro:ur30_macro parent="arm_pedestal"
+                        orientation_rpy="0.0 0.0 -1.57"
+                        translation_xyz="0.0 0.0 ${pedestal_height/2}"/>
+
+    <!-- Camera -->
+    <xacro:sensor_d435 parent="tool0"
+                        name="d435"
+                        use_nominal_extrinsics="true">
+        <origin xyz="0.0 -0.08 0.08" rpy="1.57 -1.57 0.0"/>
+    </xacro:sensor_d435>
+
+    <!-- Gripper -->
+    <xacro:epick_macro parent="tool0" 
+                        prefix=""
+                        translation_xyz="0.0 0.0 0.0"
+                        orientation_rpy="0.0 0.0 0.0"/>
+
+    <link name="gripper_for_grasping"/>
+
+    <xacro:joint parent="epick_tcp" child="gripper_for_grasping" xyz="0.0 0.0 -0.01"/>
+
+    <!-- Gazebo -->
+    <xacro:if value="$(arg gazebo)">
+        <xacro:include filename="$(find container_unloading_sim_benchmark)/urdf/base/emrox_gazebo.xacro"/>
+        <xacro:include filename="$(find container_unloading_sim_benchmark)/urdf/camera/d435_gazebo.xacro"/>
+
+        <xacro:include filename="$(find ur_description)/urdf/inc/ur_joint_control.xacro"/>
+
+        <xacro:arg name="controllers_file" default="$(find container_unloading_sim_benchmark)/config/ur30/ur_gz_controllers.yaml"/>
+        <xacro:property name="initial_positions_file" default="$(arg initial_positions)"/>
+
+        <ros2_control name="ur30" type="system">
+            <hardware>
+                <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+            </hardware>
+
+            <xacro:ur_joint_control_description
+                tf_prefix=""
+                initial_positions="${xacro.load_yaml(initial_positions_file)}"
+            />
+        </ros2_control>
+
+        <gazebo>
+            <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+                <parameters>$(arg controllers_file)</parameters>
+            </plugin>
+
+            <plugin filename="gz-sim-sensors-system"
+                name="gz::sim::systems::Sensors">
+            </plugin>
+
+            <plugin filename="contact_gripper_plugin"
+                    name="contact_gripper_plugin::ContactGripperPlugin">
+                <bodyName>epick_tcp</bodyName>
+                <threshold>0.20</threshold>
+                <control_topic>/epick/suction</control_topic>
+                <removeOnRelease>true</removeOnRelease>
+                <removeDelay>5.0</removeDelay>
+            </plugin>
+        </gazebo>    
+    </xacro:if>
+    
+    
+</robot>

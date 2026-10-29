@@ -1,0 +1,299 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+    <world name="default">
+
+        <physics name="1ms" type="ignored">
+            <max_step_size>0.005</max_step_size>
+            <real_time_factor>1.0</real_time_factor>
+        </physics>
+        
+        <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>
+        <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
+        <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
+        <plugin name='gz::sim::systems::Contact' filename='gz-sim-contact-system'/>
+
+        <gravity>0 0 -9.8</gravity>
+        <magnetic_field>5.56e-06 2.28e-05 -4.23e-05</magnetic_field>
+        <atmosphere type='adiabatic'/>
+
+        <scene>
+            <ambient>0.4 0.4 0.4 1</ambient>
+            <background>0.7 0.7 0.7 1</background>
+            <shadows>false</shadows>
+        </scene>
+
+        <gui fullscreen='true'>
+            <camera name='user_camera'>
+                <pose>-4.34 -3.63 1.68 0.0 0.15 0.58</pose>
+                <view_controller>orbit</view_controller>
+            </camera>
+        </gui>
+
+        <light name='sun' type='directional'>
+            <pose>0 0 10 0 0 0</pose>
+            <cast_shadows>false</cast_shadows>
+            <intensity>1</intensity>
+            <direction>-0.5 0.1 -0.9</direction>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.2 0.2 0.2 1</specular>
+        </light>
+
+        <light name="front_light" type="point">
+            <pose>2.80 1.00 2.00 0 0 0</pose>
+            <diffuse>1.0 0.95 0.88 1.0</diffuse>
+            <specular>0.2 0.2 0.2 1.0</specular>
+            <intensity>0.5</intensity>
+            <cast_shadows>false</cast_shadows>
+            <attenuation>
+                <range>20</range>
+                <constant>0.5</constant>
+                <linear>0.01</linear>
+                <quadratic>0.00</quadratic>
+            </attenuation>
+        </light>
+
+        <light name="back_light" type="point">
+            <pose>2.80 -0.37 1.00 0 0 0</pose>
+            <diffuse>1.0 0.95 0.88 1.0</diffuse>
+            <specular>0.2 0.2 0.2 1.0</specular>
+            <intensity>0.5</intensity>
+            <cast_shadows>false</cast_shadows>
+            <attenuation>
+                <range>20</range>
+                <constant>0.5</constant>
+                <linear>0.01</linear>
+                <quadratic>0.00</quadratic>
+            </attenuation>
+        </light>
+
+        <model name='ground_plane'>
+            <static>true</static>
+            <link name='link'>
+                <collision name='collision'>
+                    <geometry>
+                        <plane>
+                            <normal>0 0 1</normal>
+                            <size>100 100</size>
+                        </plane>
+                    </geometry>
+                </collision>
+                <visual name='visual'>
+                    <geometry>
+                        <plane>
+                            <normal>0 0 1</normal>
+                            <size>100 100</size>
+                        </plane>
+                    </geometry>
+                    <material>
+                        <ambient>0.8 0.8 0.8 1</ambient>
+                        <diffuse>0.8 0.8 0.8 1</diffuse>
+                        <specular>0.8 0.8 0.8 1</specular>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <!-- Container -->
+        <model name='container_20feet'>
+            <include>
+                <uri>container_20feet</uri>
+            </include>
+            <pose>4.8 0.28 -0.30 0.0 0.0 0.0</pose>
+            <static>true</static>
+        </model>
+
+        <!-- Layer 1 -->
+            <!-- Row 1 -->
+            <model name="box_111">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 1.125 0.175 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_112">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.770 0.175 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_113">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.415 0.175 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_114">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.060 0.175 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_115">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 -0.295 0.175 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_116">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 -0.650 0.175 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+
+            <!-- Row 2 -->
+            <model name="box_121">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 1.125 0.525 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_122">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.770 0.525 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_123">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.415 0.525 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_124">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.060 0.525 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_125">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 -0.295 0.525 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_126">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 -0.650 0.525 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+
+            <!-- Row 3 -->
+            <model name="box_131">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 1.125 0.875 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_132">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.770 0.875 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_133">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.415 0.875 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_134">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.060 0.875 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_135">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 -0.295 0.875 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_136">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 -0.650 0.875 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+
+            <!-- Row 4 -->
+            <model name="box_141">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 1.125 1.225 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_142">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.770 1.225 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_143">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.415 1.225 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_144">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.060 1.225 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_145">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 -0.295 1.225 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_146">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 -0.650 1.225 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+
+            <!-- Row 5 -->
+            <model name="box_151">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 1.125 1.575 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_152">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.770 1.575 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_153">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.415 1.575 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_154">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.060 1.575 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_155">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 -0.295 1.575 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_156">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 -0.650 1.575 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+
+            <!-- Row 6 -->
+            <model name="box_161">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 1.125 1.925 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_162">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.770 1.925 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_163">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.415 1.925 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_164">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 0.060 1.925 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_165">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 -0.295 1.925 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+            <model name="box_166">
+                <include><uri>cardboard_box35cm</uri></include>
+                <pose>3.300 -0.650 1.925 0.0 0.0 0</pose>
+                <static>false</static>
+            </model>
+
+    </world>
+</sdf>

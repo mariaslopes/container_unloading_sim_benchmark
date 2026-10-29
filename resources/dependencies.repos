@@ -1,0 +1,13 @@
+repositories:
+  container_unloading_sim_benchmark:
+    type: git
+    url: git@github.com:mariaslopes/container_unloading_sim_benchmark.git
+    version: main
+  ros2_epick_gripper:
+    type: git
+    url: https://github.com/PickNikRobotics/ros2_epick_gripper.git
+    version: main
+  rox:
+    type: git
+    url: https://github.com/neobotix/rox.git
+    version: jazzy
