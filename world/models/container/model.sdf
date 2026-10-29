@@ -6,7 +6,7 @@
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://container_20feet/meshes/container.stl</uri>
+            <uri>model://container/meshes/container.stl</uri>
             <scale> 0.00109 0.00109 0.00109 </scale>
           </mesh>
         </geometry>
@@ -22,7 +22,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://container_20feet/meshes/container.stl</uri>
+            <uri>model://container/meshes/container.stl</uri>
             <scale> 0.00109 0.00109 0.00109 </scale>
           </mesh>
         </geometry>
