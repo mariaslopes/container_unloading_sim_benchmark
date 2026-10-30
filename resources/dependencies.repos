@@ -1,7 +1,7 @@
 repositories:
   container_unloading_sim_benchmark:
     type: git
-    url: git@github.com:mariaslopes/container_unloading_sim_benchmark.git
+    url: https://github.com/mariaslopes/container_unloading_sim_benchmark.git
     version: main
   ros2_epick_gripper:
     type: git

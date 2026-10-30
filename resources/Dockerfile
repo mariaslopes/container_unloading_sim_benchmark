@@ -6,12 +6,7 @@ ENV LC_NUMERIC=en_US.UTF-8
 
 WORKDIR /home/ws_unloading
 COPY . src/container_unloading_sim_benchmark
-RUN --mount=type=secret,id=gl_pat \
-    TOKEN=$(cat /run/secrets/gl_pat) && \
-    git config --global url."https://oauth2:${TOKEN}@gitlab.inesctec.pt/".insteadOf "git@gitlab.inesctec.pt:" && \
-    vcs import --skip-existing src < src/container_unloading_sim_benchmark/resources/dependencies.repos && \
-    rm -f ~/.gitconfig /root/.gitconfig && \
-    unset TOKEN && \
+RUN vcs import --skip-existing src < src/container_unloading_sim_benchmark/resources/dependencies.repos && \
     rm -rf src/shared/rox/rox_navigation \
     src/rox/rox_bringup \
     src/rox/rox_rviz \

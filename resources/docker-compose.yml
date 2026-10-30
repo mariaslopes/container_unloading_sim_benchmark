@@ -1,6 +1,6 @@
 services:
   container_unloading:
-    image: docker-registry.inesctec.pt/industrial_robotics/projects/produtech_r3/container_unloading_sim_benchmark:latest
+    image: container_unloading_sim_benchmark:latest
     container_name: container_unloading
     restart: unless-stopped
     pull_policy: always
