@@ -102,389 +102,305 @@
             <static>true</static>
         </model>
 
-        <!-- Layer 1 -->
+        <!-- Layer 1 (35 cm boxes) -->
             <!-- Row 1 -->
             <model name="box_111">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 1.125 0.175 0.0 0.0 0</pose>
+                <pose>3.157 1.157 0.175 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_112">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.770 0.175 0.0 0.0 0</pose>
+                <pose>3.179 0.781 0.175 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_113">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.415 0.175 0.0 0.0 0</pose>
+                <pose>3.157 0.418 0.175 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_114">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.060 0.175 0.0 0.0 0</pose>
+                <pose>3.165 0.066 0.175 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_115">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 -0.295 0.175 0.0 0.0 0</pose>
+                <pose>3.189 -0.312 0.175 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_116">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 -0.650 0.175 0.0 0.0 0</pose>
+                <pose>3.176 -0.683 0.175 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
 
             <!-- Row 2 -->
             <model name="box_121">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 1.125 0.525 0.0 0.0 0</pose>
+                <pose>3.163 1.163 0.525 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_122">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.770 0.525 0.0 0.0 0</pose>
+                <pose>3.161 0.800 0.525 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_123">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.415 0.525 0.0 0.0 0</pose>
+                <pose>3.158 0.436 0.525 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_124">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.060 0.525 0.0 0.0 0</pose>
+                <pose>3.188 0.064 0.525 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_125">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 -0.295 0.525 0.0 0.0 0</pose>
+                <pose>3.185 -0.328 0.525 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_126">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 -0.650 0.525 0.0 0.0 0</pose>
+                <pose>3.163 -0.688 0.525 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
 
             <!-- Row 3 -->
             <model name="box_131">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 1.125 0.875 0.0 0.0 0</pose>
+                <pose>3.172 1.163 0.875 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_132">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.770 0.875 0.0 0.0 0</pose>
+                <pose>3.161 0.790 0.875 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_133">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.415 0.875 0.0 0.0 0</pose>
+                <pose>3.173 0.438 0.875 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_134">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.060 0.875 0.0 0.0 0</pose>
+                <pose>3.186 0.051 0.875 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_135">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 -0.295 0.875 0.0 0.0 0</pose>
+                <pose>3.166 -0.327 0.875 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_136">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 -0.650 0.875 0.0 0.0 0</pose>
+                <pose>3.159 -0.688 0.875 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
 
             <!-- Row 4 -->
             <model name="box_141">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 1.125 1.225 0.0 0.0 0</pose>
+                <pose>3.182 1.163 1.225 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_142">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.770 1.225 0.0 0.0 0</pose>
+                <pose>3.167 0.793 1.225 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_143">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.415 1.225 0.0 0.0 0</pose>
+                <pose>3.153 0.406 1.225 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_144">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.060 1.225 0.0 0.0 0</pose>
+                <pose>3.165 0.034 1.225 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_145">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 -0.295 1.225 0.0 0.0 0</pose>
+                <pose>3.190 -0.332 1.225 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_146">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 -0.650 1.225 0.0 0.0 0</pose>
+                <pose>3.171 -0.684 1.225 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
 
             <!-- Row 5 -->
             <model name="box_151">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 1.125 1.575 0.0 0.0 0</pose>
+                <pose>3.161 1.163 1.575 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_152">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.770 1.575 0.0 0.0 0</pose>
+                <pose>3.176 0.807 1.575 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_153">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.415 1.575 0.0 0.0 0</pose>
+                <pose>3.154 0.408 1.575 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_154">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.060 1.575 0.0 0.0 0</pose>
+                <pose>3.167 0.056 1.575 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_155">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 -0.295 1.575 0.0 0.0 0</pose>
+                <pose>3.168 -0.310 1.575 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_156">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 -0.650 1.575 0.0 0.0 0</pose>
+                <pose>3.188 -0.686 1.575 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
 
             <!-- Row 6 -->
             <model name="box_161">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 1.125 1.925 0.0 0.0 0</pose>
+                <pose>3.162 1.163 1.925 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_162">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.770 1.925 0.0 0.0 0</pose>
+                <pose>3.176 0.783 1.925 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_163">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.415 1.925 0.0 0.0 0</pose>
+                <pose>3.174 0.423 1.925 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_164">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 0.060 1.925 0.0 0.0 0</pose>
+                <pose>3.156 0.045 1.925 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_165">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 -0.295 1.925 0.0 0.0 0</pose>
+                <pose>3.181 -0.307 1.925 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_166">
                 <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.300 -0.650 1.925 0.0 0.0 0</pose>
+                <pose>3.172 -0.673 1.925 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
-        
-        <!-- Layer 2 -->
+
+        <!-- Layer 2 (45 cm boxes) -->
             <!-- Row 1 -->
             <model name="box_211">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 1.125 0.175 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.554 1.177 0.225 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_212">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.770 0.175 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.558 0.689 0.225 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_213">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.415 0.175 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.542 0.229 0.225 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_214">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.060 0.175 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.548 -0.242 0.225 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_215">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 -0.295 0.175 0.0 0.0 0</pose>
-                <static>false</static>
-            </model>
-            <model name="box_216">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 -0.650 0.175 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.541 -0.694 0.225 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
 
             <!-- Row 2 -->
             <model name="box_221">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 1.125 0.525 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.551 1.166 0.675 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_222">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.770 0.525 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.544 0.708 0.675 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_223">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.415 0.525 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.552 0.219 0.675 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_224">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.060 0.525 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.556 -0.245 0.675 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_225">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 -0.295 0.525 0.0 0.0 0</pose>
-                <static>false</static>
-            </model>
-            <model name="box_226">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 -0.650 0.525 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.540 -0.697 0.675 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
 
             <!-- Row 3 -->
             <model name="box_231">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 1.125 0.875 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.547 1.177 1.125 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_232">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.770 0.875 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.542 0.715 1.125 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_233">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.415 0.875 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.542 0.231 1.125 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_234">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.060 0.875 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.557 -0.239 1.125 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_235">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 -0.295 0.875 0.0 0.0 0</pose>
-                <static>false</static>
-            </model>
-            <model name="box_236">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 -0.650 0.875 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.552 -0.691 1.125 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
 
             <!-- Row 4 -->
             <model name="box_241">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 1.125 1.225 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.551 1.177 1.575 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_242">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.770 1.225 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.557 0.717 1.575 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_243">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.415 1.225 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.552 0.239 1.575 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_244">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.060 1.225 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.557 -0.214 1.575 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
             <model name="box_245">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 -0.295 1.225 0.0 0.0 0</pose>
-                <static>false</static>
-            </model>
-            <model name="box_246">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 -0.650 1.225 0.0 0.0 0</pose>
-                <static>false</static>
-            </model>
-
-            <!-- Row 5 -->
-            <model name="box_251">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 1.125 1.575 0.0 0.0 0</pose>
-                <static>false</static>
-            </model>
-            <model name="box_252">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.770 1.575 0.0 0.0 0</pose>
-                <static>false</static>
-            </model>
-            <model name="box_253">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.415 1.575 0.0 0.0 0</pose>
-                <static>false</static>
-            </model>
-            <model name="box_254">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.060 1.575 0.0 0.0 0</pose>
-                <static>false</static>
-            </model>
-            <model name="box_255">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 -0.295 1.575 0.0 0.0 0</pose>
-                <static>false</static>
-            </model>
-            <model name="box_256">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 -0.650 1.575 0.0 0.0 0</pose>
-                <static>false</static>
-            </model>
-
-            <!-- Row 6 -->
-            <model name="box_261">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 1.125 1.925 0.0 0.0 0</pose>
-                <static>false</static>
-            </model>
-            <model name="box_262">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.770 1.925 0.0 0.0 0</pose>
-                <static>false</static>
-            </model>
-            <model name="box_263">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.415 1.925 0.0 0.0 0</pose>
-                <static>false</static>
-            </model>
-            <model name="box_264">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 0.060 1.925 0.0 0.0 0</pose>
-                <static>false</static>
-            </model>
-            <model name="box_265">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 -0.295 1.925 0.0 0.0 0</pose>
-                <static>false</static>
-            </model>
-            <model name="box_266">
-                <include><uri>cardboard_box35cm</uri></include>
-                <pose>3.660 -0.650 1.925 0.0 0.0 0</pose>
+                <include><uri>cardboard_box45cm</uri></include>
+                <pose>3.552 -0.702 1.575 0.0 0.0 0</pose>
                 <static>false</static>
             </model>
 
