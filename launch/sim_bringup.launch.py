@@ -185,7 +185,7 @@ def launch_setup(context, *args, **kwargs):
                 os.path.join(
                     get_package_share_directory("container_unloading_sim_benchmark"),
                     "config",
-                    "gz_sim.rviz",
+                    "gz_config.rviz",
                 ),
             ],
             parameters=rviz_parameters,

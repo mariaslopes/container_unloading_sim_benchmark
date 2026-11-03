@@ -157,9 +157,9 @@ If you have any questions or you want to know more about this work, please
 contact:
 - **Maria S. Lopes**
   ([maria.s.lopes@inesctec.pt](mailto:maria.s.lopes@inesctec.pt))
-- **Artur Cordeiro, PhD**
+- **Artur Cordeiro**
   ([artur.j.cordeiro@inesctec.pt](mailto:artur.j.cordeiro@inesctec.pt))
-- **João Pedro C. de Souza**([joao.p.souza@inesctec.pt](mailto:joao.p.souza@inesctec.pt))
-- **Ricardo Sousa**([ricardo.b.sousa@inesctec.pt](mailto:ricardo.b.sousa@inesctec.pt))
-- **Pedro Costa**([pedro.g.costa@inesctec.pt](mailto:pedro.g.costa@inesctec.pt))
-- **Manuel F. Silva**([manuel.s.silva@inesctec.pt](mailto:manuel.s.silva@inesctec.pt))
+- **João Pedro C. de Souza** ([joao.p.souza@inesctec.pt](mailto:joao.p.souza@inesctec.pt))
+- **Ricardo Sousa** ([ricardo.b.sousa@inesctec.pt](mailto:ricardo.b.sousa@inesctec.pt))
+- **Pedro Costa** ([pedro.g.costa@inesctec.pt](mailto:pedro.g.costa@inesctec.pt))
+- **Manuel F. Silva** ([manuel.s.silva@inesctec.pt](mailto:manuel.s.silva@inesctec.pt))
